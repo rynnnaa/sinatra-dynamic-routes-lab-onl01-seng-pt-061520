@@ -12,7 +12,7 @@ class App < Sinatra::Base
     "#{@num ** 2}"
   end
   
-  get '/say/:number' do
+  get '/say/:number/:phrase' do
     @number = params[:number].to_i
     @phrase = params[:phrase]
     "#{@phrase * @number}"
