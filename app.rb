@@ -39,5 +39,7 @@ class App < Sinatra::Base
     elsif params[:operation] == "divide"
       @operation = :/
     end
-    @number1 = 
+    "#{@number1.public_send(@operation, @number2).to_s}"
+  end
+
 end
